@@ -2,7 +2,7 @@ package org.example;
 
 import java.util.function.*;
 
-public class Calculator {
+class Calculator {
     static final Supplier<Calculator> instance = Calculator::new;
 
     final BinaryOperator<Integer> plus = (x, y) -> x + y;
